@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Base Converter</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>ממיר בסיסים</h1>
+    <p class="description">המרת מספרים בין בסיסים שונים (בינארי, עשרוני, הקסדצימלי, אוקטלי)</p>
+
+    <div class="section">
+      <p class="section-title">בסיס מקור (FROM):</p>
+      <div class="button-group">
+        <button class="base-from btn-red" data-base="2">בינארי (2)</button>
+        <button class="base-from btn-blue" data-base="8">אוקטלי (8)</button>
+        <button class="base-from btn-purple selected" data-base="10">עשרוני (10)</button>
+        <button class="base-from btn-yellow" data-base="16">הקסדצימלי (16)</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <label for="inputNumber" class="section-title">הזן מספר:</label>
+      <input type="text" id="inputNumber" placeholder="הזן מספר כאן..." />
+    </div>
+
+    <div class="section">
+      <p class="section-title">בסיס יעד (TO):</p>
+      <div class="button-group">
+        <button class="base-to btn-red" data-base="2">בינארי (2)</button>
+        <button class="base-to btn-blue" data-base="8">אוקטלי (8)</button>
+        <button class="base-to btn-purple" data-base="10">עשרוני (10)</button>
+        <button class="base-to btn-yellow selected" data-base="16">הקסדצימלי (16)</button>
+      </div>
+    </div>
+
+    <div id="result" class="result-box"></div>
+
+    <div class="text-center">
+      <button id="convertBtn" class="convert-btn">המר</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
